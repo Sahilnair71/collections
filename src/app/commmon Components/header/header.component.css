@@ -1,0 +1,83 @@
+.header-search {
+  position: relative;
+}
+
+.search-city {
+  position: absolute;
+  width: 350px;
+}
+
+.select-city {
+  position: relative;
+}
+.select-city a {
+  color: gray;
+  font-size: 13px;
+}
+
+.overlay {
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 73vw;
+
+  background-color: #fff;
+  box-shadow: -5px 5px 10px #00000029;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #00aa13;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.hfonts {
+  font-size: 1.5vw;
+}
+.dropdown-menu.show {
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .search-city {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 10px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

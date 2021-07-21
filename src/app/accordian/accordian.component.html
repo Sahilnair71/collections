@@ -1,0 +1,31 @@
+<!-- <div *ngIf="">
+
+</div> -->
+
+<div
+  *ngFor="
+    let item of data.slice(this.startPage, this.paginationLimit);
+    let i = index
+  "
+>
+  <button class="accordion" (click)="toggleAccordian($event, i)">
+    {{ item.parentName }}
+  </button>
+  <div class="panel" hide="!item.isActive">
+    <p *ngFor="let child of item.childProperties">{{ child.propertyName }}</p>
+  </div>
+</div>
+<button
+  style="background: transparent; border: none; color: #18b46b; outline: none"
+  *ngIf="showmore"
+  (click)="showMoreItems()"
+>
+  +View More
+</button>
+<button
+  style="background: transparent; border: none; color: #18b46b; outline: none"
+  *ngIf="showless"
+  (click)="showLessItems()"
+>
+  -View Less
+</button>

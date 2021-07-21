@@ -1,0 +1,755 @@
+<!-- HOME COMPONENT  -->
+
+<!-- Header component -->
+<app-header></app-header>
+<div class="home-container">
+  <div class="container-fluid">
+    <br />
+
+    <!-- IMAGE SLIDER -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel_background">
+          <div class="row">
+            <div class="col-7 padding_7">
+              <br /><br /><br />
+              <p class="font_adjust">This could actually</p>
+              <p class="font_adjust">be " About Hybrid Bikes"?</p>
+            </div>
+            <div class="col-4 padding_4">
+              <img src="assets/bike_C.png" alt="Los Angeles" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel_background">
+          <div class="row">
+            <div class="col-7 padding_7">
+              <br /><br /><br />
+              <p class="font_adjust">This could actually</p>
+              <p class="font_adjust">be " About Hybrid Bikes"?</p>
+            </div>
+            <div class="col-4 padding_4">
+              <img src="assets/bike_C.png" alt="Los Angeles" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel_background">
+          <div class="row">
+            <div class="col-7 padding_7">
+              <br /><br /><br />
+              <p class="font_adjust">This could actually</p>
+              <p class="font_adjust">be " About Hybrid Bikes"?</p>
+            </div>
+            <div class="col-4 padding_4">
+              <img src="assets/bike_C.png" alt="Los Angeles" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#demo"
+        data-slide="prev"
+        style="opacity: 1"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#demo"
+        data-slide="next"
+        style="opacity: 1"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <br /><br />
+    <div class="container">
+      <!-- THREE CARDS -->
+      <div class="row">
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_3">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-6">
+                  <img src="assets/sell.png" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-7">
+                  <button class="butto_1" [routerLink]="['/sell']">
+                    SELL USED BIKES
+                  </button>
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-9" style="padding: 0px">
+                  <p class="text_padding">
+                    Sell used bikes @Best Price @Instant Payment within XX hours
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_3">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-6">
+                  <img src="assets/buy.png" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-7">
+                  <button class="butto_1">BUY HYBRID Bikes</button>
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-7">
+                  <p class="text_padding">
+                    Buy reliable hybrid bikes from Green Tiger
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_3">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-6">
+                  <img src="assets/drive.png" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-7">
+                  <button class="butto_1">BOOK A TEST DRIVE</button>
+                </div>
+              </div>
+              <div class="row justify-content-center button_margin">
+                <div class="col-9" style="padding: 0px">
+                  <p class="text_padding">
+                    Sell used bikes @Best Price @Instant Payment within XX hours
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SELLING A BIKE? WE ARE BUYING! -->
+      <br /><br /><br /><br />
+      <div>
+        <div class="row">
+          <div class="col-7 row_top">
+            <div class="row">
+              <p class="selling mobmargin">SELLING A BIKE? WE ARE BUYING!</p>
+              <div class="col-11 col-sm-9" style="padding-left: 0px">
+                <p class="sub mobmargin">
+                  If you like the price, sell instantly to us from the comfort
+                  of your home!
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5" style="padding: 0px">
+                <button class="sell_button" [routerLink]="['/sell']">
+                  SELL USED BIKES
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div>
+              <img src="assets/home.png" alt="" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <p class="text">
+            Benefits of Selling Used Bikes
+            <span class="span_text"> to Green Tiger</span>
+          </p>
+        </div>
+        <!-- benefits card -->
+        <div class="row">
+          <div class="col-12 col-sm-4 d-flex align-items-stretch">
+            <div class="card card_4">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <img
+                      src="assets/bs1.png
+                  "
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <br />
+
+                <p class="p_align">Hassle free documentation with warranties</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 d-flex align-items-stretch">
+            <div class="card card_4">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <img
+                      src="assets/bs2.png
+                  "
+                      alt=""
+                      style="width: 125%"
+                    />
+                  </div>
+                </div>
+                <br />
+
+                <p class="p_align">Sell easy within 6 hours</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 d-flex align-items-stretch">
+            <div class="card card_4">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <img
+                      src="assets/bs3.png
+                  "
+                      alt=""
+                      style="width: 125%"
+                    />
+                  </div>
+                </div>
+                <br />
+
+                <p class="p_align">Instant Cash Payment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- grey part -->
+<div class="bgcolor">
+  <div class="container-fluid">
+    <div class="container">
+      <br /><br />
+      <div class="row justify-content-center">
+        <p class="text1">
+          Know All About <span class="span_text"> Hybrid Bikes</span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/G1.png
+                  "
+                    alt=""
+                    class="sctimg"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Reduced Opex</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/G2.png
+                    "
+                    alt=""
+                    style="width: 110%"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Enhanced Vehicle Life</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/G3.png
+                    "
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Calculate Carbon & Cost Savings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-7 col-sm-4 mgbottom">
+          <button class="sell_button">
+            KNOW MORE
+            <span class="carousel-control-next-icon knowmorebtn"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row justify-content-center">
+  <div class="col-6">
+    <p
+      style="
+        text-align: center;
+        font-size: 2vw;
+        color: #295f73;
+        font-weight: 600;
+      "
+    >
+      Moving Counter
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8 col-sm-6">
+      <img src="assets/1.png" alt="" style="width: 100%" />
+    </div>
+  </div>
+</div>
+
+<!-- grey part -->
+<div class="bgcolor">
+  <div class="container-fluid">
+    <div class="container">
+      <br /><br />
+      <div class="row justify-content-center">
+        <p class="text1">
+          Benefits of Buying Hybrid Bikes from
+          <span class="span_text">Green Tiger</span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/H1.png
+                  "
+                    alt=""
+                    style="width: 140%"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Performance Warrnties</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/H2.png
+                    "
+                    alt=""
+                    style="width: 113%"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Complete Documents Warrenty</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex align-items-stretch">
+          <div class="card card_4">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <img
+                    src="assets/H3.png
+                    "
+                    alt=""
+                    style="width: 105%"
+                  />
+                </div>
+              </div>
+              <br />
+
+              <p class="p_align">Complete Documents Warrenty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-7 col-sm-4 mgbottom">
+          <button class="sell_button">
+            KNOW MORE
+            <span class="carousel-control-next-icon knowmorebtn"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+
+<!-- we deal with foll brands -->
+<div class="row justify-content-center">
+  <p class="text1">We Deal Following<span class="span_text"> Brands</span></p>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img
+                src="assets/hero.png"
+                alt=""
+                width="100%"
+                class="brand_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img
+                src="assets/honda.png"
+                alt=""
+                width="100%"
+                class="brand_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img
+                src="assets/bajaj.png"
+                alt=""
+                width="100%"
+                class="brand_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img src="assets/re.png" alt="" width="100%" class="brand_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img src="assets/tvs.png" alt="" width="100%" class="brand_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-4 col-sm-2 col_2_upgrade d-flex align-items-stretch mobmargin"
+      >
+        <div class="card brand_bg">
+          <div class="row justify-content-center">
+            <div>
+              <img
+                src="assets/suzuki.png"
+                alt=""
+                width="100%"
+                class="brand_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+<!-- slider -->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row justify-content-center">
+      <p class="text1">Popular bikes</p>
+    </div>
+    <br />
+    <app-slider></app-slider>
+    <br /><br />
+    <div class="row justify-content-center">
+      <div class="text1">Customer Testimonal</div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <img src="assets/cardbg.png" alt="" style="width: 100%" />
+        <div class="row">
+          <div class="col-11 allignment">
+            <p class="details">
+              It is the one of the best service Offered Great Customer Service
+              good service assisted and legal work is very nice and interactive
+              and convincing . Over all service is good.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="assets/cimg.png" alt="" style="width: 100%" />
+              </div>
+            </div>
+            <p class="name">Paritosh Patil</p>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="assets/cardbg_orange.png" alt="" style="width: 100%" />
+        <div class="row">
+          <div class="col-11 allignment">
+            <p class="details">
+              It is the one of the best service Offered Great Customer Service
+              good service assisted and legal work is very nice and interactive
+              and convincing . Over all service is good.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="assets/cimg.png" alt="" style="width: 100%" />
+              </div>
+            </div>
+            <p class="name">Paritosh Patil</p>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="assets/cardbg.png" alt="" style="width: 100%" />
+        <div class="row">
+          <div class="col-11 allignment">
+            <p class="details">
+              It is the one of the best service Offered Great Customer Service
+              good service assisted and legal work is very nice and interactive
+              and convincing . Over all service is good.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="assets/cimg.png" alt="" style="width: 100%" />
+              </div>
+            </div>
+            <p class="name">Paritosh Patil</p>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-12 col-sm-4 mgbottom">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card cardstyle">
+              <div class="card-body">
+                <img src="assets/Arai_Helmet.png" alt="" style="width: 100%" />
+                <p class="elemets">Arai helmet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 mgbottom">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card cardstyle">
+              <div class="card-body">
+                <img src="assets/iit.png" alt="" style="width: 100%" />
+                <p class="elemets">Arai helmet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 mgbottom">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card cardstyle">
+              <div class="card-body">
+                <img src="assets/env.png" alt="" style="width: 100%" />
+                <p class="elemets">Arai helmet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+  </div>
+</div>
+<!-- the news -->
+<div id="demo1" class="carousel slide background" data-ride="carousel">
+  <!-- 
+  The slideshow -->
+  <div class="carousel-inner carousel-inner1906">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <img src="assets/hindu.png" alt="" />
+        </div>
+        <div class="col-12 col-sm-8 borderl">
+          <p class="gtext">Great Service</p>
+          <p class="gsub">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-12 col-sm-4 borderl">
+          <img src="assets/hindu.png" alt="" />
+        </div>
+        <div class="col-12 col-sm-8">
+          <p class="gtext">Great Service</p>
+
+          <p class="gsub">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-12 col-sm-4 borderl">
+          <img src="assets/hindu.png" alt="" />
+        </div>
+        <div class="col-12 col-sm-8">
+          <p class="gtext">Great Service</p>
+
+          <p class="gsub">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Indicators -->
+    <ul class="carousel-indicators carousel-indicators1906">
+      <li data-target="#demo1" data-slide-to="0" class="active"></li>
+      <li data-target="#demo1" data-slide-to="1"></li>
+      <li data-target="#demo1" data-slide-to="2"></li>
+    </ul>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo1" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<br /><br /><br />
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="text1" style="color: #295f73">FREQUENTLY ASKED QUESTIONS</p>
+      </div>
+    </div>
+    <app-accordian></app-accordian>
+
+    <!-- <a href="" style="color: #18b46b"> +View More</a> -->
+  </div>
+</div>
+
+<br />
+
+<div style="background-color: #bcd0d7">
+  <div class="container grey">
+    <div class="row">
+      <div class="col-6">
+        <p class="not mobmargin">NOT MADE UP YOUR MIND YET ?</p>
+        <p class="let mobmargin">Let us know what you’re looking for</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 pad" style="padding-left: 0px">
+            <div>
+              <button class="sell_button">I WANT TO SELL</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 pad">
+            <div>
+              <button class="sell_button">I WANT TO BUY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <img src="assets/home.png" alt="" style="width: 100%" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer component -->
+<app-footer></app-footer>

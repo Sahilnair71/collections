@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~keen-slider/keen-slider.min.css";
+
+@import "~bs-stepper/dist/css/bs-stepper.min.css";
+* {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+.row {
+  margin: 0px;
+}

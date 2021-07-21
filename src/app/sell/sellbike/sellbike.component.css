@@ -1,0 +1,104 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+.container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+/*  stepper  */
+.bgcolor {
+  background-color: #ebebebc2;
+}
+
+/* next steps*/
+.card_4 {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.p_align {
+  text-align: center;
+  color: #295f73;
+  font-size: 1.2vw;
+}
+.t_align {
+  text-align: center;
+  color: #003444;
+  font-weight: 600;
+  font-size: 1.6vw;
+}
+.cd {
+  box-shadow: 0px 5px 6px #00000029;
+  border-radius: 10px;
+}
+.pcards {
+  text-align: center;
+  color: #003444;
+  font-size: 1vw;
+}
+.col2modified {
+  flex: 0 0 18.666667%;
+  max-width: 18.666667%;
+}
+
+@media screen and (max-width: 576px) {
+  .sellbikes {
+    color: #00aa13;
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 6%;
+  }
+  .home {
+    color: #1a3d4a;
+    font-size: 2.2vw;
+    margin-bottom: 0px;
+  }
+  .details {
+    color: #003444;
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+  .p_align {
+    text-align: center;
+    color: #295f73;
+    font-size: 2.2vw;
+  }
+  .t_align {
+    text-align: center;
+    color: #003444;
+    font-weight: 600;
+    font-size: 2.6vw;
+  }
+  .col2modified {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 4%;
+  }
+  .pcards {
+    text-align: center;
+    color: #003444;
+    font-size: 2vw;
+  }
+}

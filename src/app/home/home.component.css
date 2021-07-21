@@ -1,0 +1,357 @@
+/* CAROUSEL */
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_background {
+  background: #bcd0d7;
+  width: 100%;
+  /* height: 500px; */
+}
+
+.carousel-item {
+  padding: 4vw;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 2vw;
+  height: 2vw;
+  background: white;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("src\assets\left-arrow-2.png");
+  background-size: cover;
+}
+
+.carousel-control-next-icon {
+  background-image: url("src\assets\left-arrow-3.png");
+  background-size: cover;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  width: 15%;
+  color: #fff;
+  /* text-align: right; */
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  padding: 1%;
+}
+
+.font_adjust {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.padding_4 {
+  padding-left: 0px;
+}
+.padding_7 {
+  padding-right: 0px;
+}
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  width: 15%;
+  color: #fff;
+  /* text-align: right; */
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  padding: 1%;
+}
+
+/*  THREE CARDS*/
+.container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.col-3-revised {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.butto_1 {
+  color: #ffffff;
+  background: #295f73;
+  box-shadow: 3px 3px 10px #00000029;
+  border: 3px solid #bcd0d7;
+  border-radius: 5px;
+  font-size: 0.7vw;
+  padding: 3%;
+  width: 100%;
+}
+.button_margin {
+  margin-top: 2%;
+}
+.text_padding {
+  font-size: 0.8vw;
+  text-align: center;
+  margin-top: 3%;
+}
+.card_3 {
+  box-shadow: 5px 5px 10px #00000029;
+  border: 1px solid #295f73;
+  border-radius: 15px;
+}
+
+/* selling a bike */
+
+.selling {
+  font-size: 2vw;
+  font-weight: 600;
+  color: #003444;
+}
+
+.sub {
+  font-size: 1.5vw;
+  color: #003444;
+}
+
+.sell_button {
+  background: #18b46b 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border: 3px solid #b1d2c3;
+  border-radius: 5px;
+  opacity: 1;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+}
+.row_top {
+  margin-top: 5%;
+}
+/* BENEFITS */
+.text {
+  font-size: 2vw;
+}
+.text1 {
+  font-size: 2vw;
+}
+.span_text {
+  font-weight: 600;
+  color: #18b46b;
+}
+.card_4 {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.p_align {
+  text-align: center;
+  color: #003444;
+}
+
+/* grey part */
+
+.bgcolor {
+  background-color: #ebebeb5c;
+}
+.mgbottom {
+  margin-bottom: 3%;
+}
+.knowmorebtn {
+  float: right;
+  background-color: transparent;
+  /* color: white; */
+  filter: invert(1);
+}
+.sctimg {
+  width: 140%;
+}
+/* we deal with foll brands */
+
+.brand_img {
+  padding-bottom: 10%;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.brand_bg {
+  background: #bcd0d7 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  width: 100%;
+}
+.col_2_upgrade {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* card with background image */
+
+.allignment {
+  margin-top: -64%;
+  font-size: 78%;
+  text-align: center;
+}
+
+.details {
+  color: #003444;
+}
+.name {
+  color: #ffffff;
+}
+.elemets {
+  color: #003444;
+  text-align: center;
+  font-size: 1.5vw;
+}
+.cardstyle {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #bcd0d7;
+}
+
+/* in the news */
+
+.nav-item1906 .nav-link {
+  color: #999999;
+}
+
+.nav-item1906 .active {
+  color: white;
+}
+
+.carousel-inner1906 img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators1906 li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+.gtext {
+  color: #295f73;
+  font-style: italic;
+  font-size: 2.3vw;
+}
+.gsub {
+  color: #003444;
+}
+.background {
+  background-color: #ebebebc1;
+}
+.borderl {
+  border-left: 3px solid #bcd0d7;
+}
+/* accordian */
+/* not made up yout=r mind */
+
+.not {
+  color: #003444;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.let {
+  color: #003444;
+}
+.grey {
+  background-color: #bcd0d7;
+  padding: 6%;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 576px) {
+  /*  3 cards*/
+  .butto_1 {
+    font-size: 1.7vw;
+  }
+  .selling {
+    font-size: 3vw;
+  }
+  .text_padding {
+    font-size: 1.8vw;
+  }
+  .sell_button {
+    font-size: 1.5vw;
+  }
+  .row_top {
+    margin-top: 0%;
+  }
+
+  .card_3 {
+    margin-top: 3%;
+    width: 100%;
+  }
+  .mobmargin {
+    margin-bottom: 2%;
+  }
+  .sub {
+    font-size: 2vw;
+  }
+  .text {
+    font-size: 3.3vw;
+    margin-top: 8%;
+  }
+  .text1 {
+    font-size: 5.3vw;
+  }
+  .sctimg {
+    width: 100%;
+  }
+
+  /* imgcards */
+  .allignment {
+    margin-top: -65%;
+    font-size: 71%;
+    text-align: center;
+  }
+
+  .details {
+    color: #003444;
+  }
+  .name {
+    color: #ffffff;
+  }
+  /* the news */
+  .gtext {
+    color: #295f73;
+    font-style: italic;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .gsub {
+    color: #003444;
+    font-size: 3vw;
+  }
+  .borderl {
+    border-left: none;
+  }
+
+  .not {
+    color: #003444;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  .let {
+    color: #003444;
+    font-size: 2.5vw;
+  }
+  .pad {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,264 @@
+<div class="container">
+  <div id="stepper1" class="bs-stepper">
+    <div class="bs-stepper-header">
+      <div class="step" data-target="#test-l-1">
+        <button class="step-trigger">
+          <span
+            class="bs-stepper-label backgroundlabels steplable"
+            [ngClass]="{ active1: success, active2: step1 }"
+            >{{ city_name }}</span
+          >
+        </button>
+      </div>
+
+      <div class="step" data-target="#test-l-2">
+        <button class="step-trigger">
+          <span
+            class="bs-stepper-label backgroundlabels steplable"
+            [ngClass]="{ active1: success1, active2: step2 }"
+            >{{ brand_name }}</span
+          >
+        </button>
+      </div>
+
+      <div class="step" data-target="#test-l-3">
+        <button class="step-trigger">
+          <span
+            class="bs-stepper-label backgroundlabels steplable"
+            [ngClass]="{ active1: success2, active2: step3 }"
+            >{{ model_name }}
+          </span>
+        </button>
+      </div>
+
+      <div class="step" data-target="#test-l-4">
+        <button class="step-trigger">
+          <span
+            class="bs-stepper-label backgroundlabels steplable"
+            [ngClass]="{ active1: success3, active2: step4 }"
+            >{{ variant_name }}
+          </span>
+        </button>
+      </div>
+
+      <div class="step" data-target="#test-l-5">
+        <button class="step-trigger">
+          <span
+            class="bs-stepper-label backgroundlabels steplable"
+            [ngClass]="{ active1: success4, active2: step5 }"
+            >{{ year_name }}
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- steper content -->
+    <div class="bs-stepper-content">
+      <form (ngSubmit)="onSubmit()">
+        <div id="test-l-1" class="content">
+          <div class="form-group">
+            <label for="exampleInputEmail1 " class="italic"
+              >Choose Your City :</label
+            >
+            <div class="row">
+              <div class="col-2" *ngFor="let item of city">
+                <div style="padding: 0">
+                  <img
+                    [src]="item.img"
+                    alt=""
+                    class="images"
+                    (click)="onCity(item.name)"
+                  />
+
+                  <div class="row justify-content-center">
+                    <div class="col-6">
+                      <p class="cityname">{{ item.name }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test-l-2" class="content">
+          <div class="form-group">
+            <label class="italic" for="exampleInputPassword1 italic"
+              >Choose Vehicle Brand :</label
+            >
+            <div class="row">
+              <div
+                class="col-3 col-md-2 d-flex flex-column align-items-stretch"
+                *ngFor="let item of brand"
+                (click)="onBrand(item.name)"
+              >
+                <div class="card flex-grow-1" style="padding: 0">
+                  <div class="card-body">
+                    <!-- <div class="row">
+                      <div class="col-12"> -->
+                    <img [src]="item.img" alt="" class="images" />
+                    <!-- </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div style="text-align: center">
+                  <p class="cityname val">{{ item.name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button (click)="next()" class="btn btn-primary">Next</button> -->
+        </div>
+        <div id="test-l-3" class="content">
+          <div class="form-group">
+            <label class="italic" for="exampleInputPassword1 italic"
+              >Choose Vehicle Brand :</label
+            >
+            <div class="row">
+              <div
+                class="col-2 marg"
+                *ngFor="
+                  let item of model.slice(this.startPage, this.paginationLimit);
+                  let i = index
+                "
+              >
+                <div class="padbox">
+                  <p class="ptag" (click)="onModel(item)">{{ item }}</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <button
+                  *ngIf="showmore"
+                  (click)="showMoreItems()"
+                  class="showmore"
+                >
+                  +View More
+                </button>
+                <button
+                  *ngIf="showless"
+                  (click)="showLessItems()"
+                  class="showmore"
+                >
+                  -View Less
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test-l-4" class="content">
+          <div class="form-group">
+            <label class="italic" for="exampleInputPassword1 italic"
+              >Choose Vehicle Brand :</label
+            >
+            <div class="row">
+              <div class="col-2 marg" *ngFor="let item of variant">
+                <div class="padbox">
+                  <p class="ptag" (click)="onVariant(item)">{{ item }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test-l-5" class="content">
+          <div class="form-group">
+            <label class="italic" for="exampleInputPassword1 italic"
+              >Choose Vehicle Brand :</label
+            >
+            <div class="row">
+              <div class="col-2 marg" *ngFor="let item of year">
+                <div class="padbox" [ngClass]="{ active1: item == year_name }">
+                  <p class="ptag" (click)="onYear(item)">{{ item }}</p>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="final">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <button
+                    class="button_Quotation"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                  >
+                    Get Quotation
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div *ngIf="otp_form == false">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <!-- <div class="row justify-content-center">
+                        <div class="col-12"> -->
+                      <p>Share Mobile Number Details</p>
+                      <!-- </div>
+                      </div> -->
+
+                      <!-- <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                    </div>
+                    <div class="modal-body">
+                      <label for="exampleInputPassword1" style="color: #999999"
+                        >Phone number</label
+                      >
+                      <input class="form-control" placeholder="Phone number" />
+                      <button
+                        type="button"
+                        class="btn btn-primary button_Quotation"
+                        style="width: 338px"
+                        (click)="getQuotation()"
+                      >
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="otp_form == true">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        Modal 2
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+
+                      <button
+                        type="button"
+                        class="btn btn-primary button_Quotation"
+                        style="width: 338px"
+                      >
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

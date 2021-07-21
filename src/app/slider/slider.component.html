@@ -1,0 +1,160 @@
+<div class="navigation-wrapper">
+  <div class="keen-slider" #sliderRef>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keen-slider__slide">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/yamaha.png"
+          alt="Card image cap"
+        />
+        <div class="card-body body">
+          <div>
+            <p class="yama">Yamaha FZ125</p>
+          </div>
+          <div class="row">
+            <div class="col-6" style="padding: 0px">
+              <p class="dark cost">₹75,000</p>
+            </div>
+            <div class="col-6" style="padding: 0px">
+              <p class="light cost">₹80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg
+    [ngClass]="
+      'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+    "
+    (click)="slider.prev()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+    />
+  </svg>
+  <svg
+    *ngIf="slider"
+    [ngClass]="
+      'arrow arrow--right ' +
+      (slider.details().size - 1 === currentSlide ? 'arrow--disabled' : '')
+    "
+    (click)="slider.next()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+  </svg>
+</div>
