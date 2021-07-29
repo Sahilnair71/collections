@@ -198,30 +198,30 @@
                       <!-- <div class="row justify-content-center">
                         <div class="col-12"> -->
                       <p>Share Mobile Number Details</p>
-                      <!-- </div>
-                      </div> -->
 
-                      <!-- <button
+                      <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
                         <span aria-hidden="true">&times;</span>
-                      </button> -->
+                      </button>
                     </div>
                     <div class="modal-body">
                       <label for="exampleInputPassword1" style="color: #999999"
                         >Phone number</label
                       >
+                      <br />
                       <input class="form-control" placeholder="Phone number" />
+                      <br />
                       <button
                         type="button"
                         class="btn btn-primary button_Quotation"
                         style="width: 338px"
                         (click)="getQuotation()"
                       >
-                        Save changes
+                        SUBMIT
                       </button>
                     </div>
                   </div>
@@ -230,7 +230,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLongTitle">
-                        Modal 2
+                        OTP Verification
                       </h5>
                       <button
                         type="button"
@@ -242,7 +242,29 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      ...
+                      <p class="otptext">
+                        we sent you an SMS code on number :+91 9876543210
+                      </p>
+
+                      <div class="row justify-content-center">
+                        <div class="col-10">
+                          <ngx-otp-input
+                            [config]="otpInputConfig"
+                            (otpChange)="handeOtpChange($event)"
+                            (fill)="handleFillEvent($event)"
+                          >
+                          </ngx-otp-input>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <div class="col-3" *ngIf="seconds != 0">
+                          {{ seconds }}
+                        </div>
+                        <div class="col-6 resend">
+                          <p class="pmarg">Code not received?</p>
+                        </div>
+                      </div>
+                      <br />
 
                       <button
                         type="button"

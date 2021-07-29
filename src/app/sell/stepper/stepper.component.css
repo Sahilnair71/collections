@@ -7,6 +7,15 @@
   color: #757575;
   width: 10vw;
 }
+.ngx-otp-input {
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+  font-size: 1.25rem;
+  outline: 0;
+  border: none;
+  border-bottom: black 1px solid;
+}
 .images {
   width: 100%;
   margin-bottom: 1%;
@@ -80,4 +89,20 @@
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.otptext {
+  font-size: 1vw;
+  color: #295f73;
+}
+.resend {
+  color: #295f73;
+  border-left: #295f73 1px solid;
+  font-size: 1vw;
+}
+.modal-header {
+  border-bottom: none;
+}
+.pmarg {
+  margin: 0px;
 }

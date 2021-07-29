@@ -12,6 +12,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AccordianComponent } from './accordian/accordian.component';
 import { SellbikeComponent } from './sell/sellbike/sellbike.component';
 import { StepperComponent } from './sell/stepper/stepper.component';
+import { NgxOtpInputModule } from 'ngx-otp-input';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { StepperComponent } from './sell/stepper/stepper.component';
     SellbikeComponent,
     StepperComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, NgxOtpInputModule],
   providers: [],
   bootstrap: [AppComponent],
 })

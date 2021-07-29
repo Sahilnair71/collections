@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Stepper from 'bs-stepper';
+import { NgxOtpInputConfig } from 'ngx-otp-input';
 
 @Component({
   selector: 'app-stepper',
@@ -7,6 +8,12 @@ import Stepper from 'bs-stepper';
   styleUrls: ['./stepper.component.css'],
 })
 export class StepperComponent implements OnInit {
+  public settings = {
+    length: 4,
+    numbersOnly: true,
+    timer: 120,
+    timerType: 1,
+  };
   name = 'Angular';
   city_name = 'City';
   brand_name = 'BRAND';
@@ -22,6 +29,7 @@ export class StepperComponent implements OnInit {
   paginationLimit: number;
   showmore = true;
   showless = false;
+  seconds: any;
   size: number;
   step1 = true;
   step2 = false;
@@ -30,6 +38,26 @@ export class StepperComponent implements OnInit {
   step5 = false;
   final = false;
   otp_form = false;
+  otpInputConfig: NgxOtpInputConfig = {
+    otpLength: 6,
+    autofocus: true,
+    classList: {
+      inputBox: 'my-super-box-class',
+      input: 'my-super-class',
+      inputFilled: 'my-super-filled-class',
+      inputDisabled: 'my-super-disable-class',
+      inputSuccess: 'my-super-success-class',
+      inputError: 'my-super-error-class',
+    },
+  };
+
+  handeOtpChange(value: string[]): void {
+    console.log(value);
+  }
+
+  handleFillEvent(value: string): void {
+    console.log(value);
+  }
 
   private stepper: Stepper;
 
@@ -176,9 +204,23 @@ export class StepperComponent implements OnInit {
     this.showless = false;
     this.showmore = true;
   }
+  update_time() {
+    let counter = 60;
+
+    const interval = setInterval(() => {
+      this.seconds = counter;
+      console.log(counter);
+      counter--;
+
+      if (counter < 0) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  }
   getQuotation() {
     this.otp_form = true;
     console.log(this.otp_form);
+    this.update_time();
   }
 
   constructor() {}

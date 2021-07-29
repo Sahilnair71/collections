@@ -9,3 +9,13 @@
 .row {
   margin: 0px;
 }
+ngx-otp-input .my-super-box-class {
+  text-align: center;
+  font-size: 1.25;
+  outline: 0;
+}
+ngx-otp-input .my-super-class {
+  border: 0px solid !important;
+  border-bottom: 1px solid black !important;
+  border-radius: 0px !important;
+}
