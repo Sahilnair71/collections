@@ -125,6 +125,20 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
+  .resend {
+    color: #295f73;
+    border-left: #295f73 1px solid;
+    font-size: 2.5vw;
+  }
+  .resend_code {
+    color: #003444;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .timer {
+    font-size: 2.5vw;
+  }
+
   .otptext {
     font-size: 2.5vw;
     color: #295f73;
@@ -219,19 +233,6 @@ hr {
 
 .arrow--left {
   left: -19px;
-}
-.resend {
-  color: #295f73;
-  border-left: #295f73 1px solid;
-  font-size: 2.5vw;
-}
-.resend_code {
-  color: #003444;
-  font-size: 2.5vw;
-  text-align: center;
-}
-.timer {
-  font-size: 2.5vw;
 }
 
 .arrow--right {
