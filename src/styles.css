@@ -2,6 +2,7 @@
 @import "~keen-slider/keen-slider.min.css";
 
 @import "~bs-stepper/dist/css/bs-stepper.min.css";
+@import "~keen-slider/keen-slider.min.css";
 * {
   list-style: none;
   font-family: "Montserrat", sans-serif;

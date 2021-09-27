@@ -13,6 +13,15 @@ import { AccordianComponent } from './accordian/accordian.component';
 import { SellbikeComponent } from './sell/sellbike/sellbike.component';
 import { StepperComponent } from './sell/stepper/stepper.component';
 import { NgxOtpInputModule } from 'ngx-otp-input';
+import { EstimatedcostComponent } from './sell/estimatedcost/estimatedcost.component';
+import { PhysicalComponent } from './sell/physical/physical.component';
+import { DoorstepComponent } from './sell/doorstep/doorstep.component';
+import { PayComponent } from './sell/pay/pay.component';
+import { SuccessComponent } from './sell/success/success.component';
+import { LocationComponent } from './buy/location/location.component';
+import { BikeDetailsComponent } from './buy/bike-details/bike-details.component';
+import { BikeInfoComponent } from './buy/bike-info/bike-info.component';
+import { Slider1Component } from './buy/slider1/slider1.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +35,15 @@ import { NgxOtpInputModule } from 'ngx-otp-input';
     AccordianComponent,
     SellbikeComponent,
     StepperComponent,
+    EstimatedcostComponent,
+    PhysicalComponent,
+    DoorstepComponent,
+    PayComponent,
+    SuccessComponent,
+    LocationComponent,
+    BikeDetailsComponent,
+    BikeInfoComponent,
+    Slider1Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, NgxOtpInputModule],
   providers: [],

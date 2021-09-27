@@ -1,0 +1,109 @@
+<div class="container">
+  <div>
+    <p class="details">ESTIMATED PRICE</p>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8 col-sm-5">
+      <p class="approx">
+        Approximate
+        <span style="color: #18b46b; font-weight: 600">Evaluation</span>
+      </p>
+      <p class="cost">₹ 25,000 - ₹ 35,000 *</p>
+      <p class="note">
+        * This is an approximate price calculated from the provided bike
+        details. This estimation will largely vary based on the report produced
+        by physical/ doorstep inspection
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10">
+          <button
+            class="button_Quotation"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            BOOK FOR INSPECTION
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+  <hr style="border: 1px dashed #bcd0d7" />
+  <br /><br />
+</div>
+<!-- MODAL CONTENTS -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal_width">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body">
+          <p class="details" style="text-align: center; margin-bottom: 1%">
+            Inspection
+          </p>
+          <p class="card_details">Choose a mode of inspection</p>
+          <div class="row">
+            <div class="col-6 d-flex align-items-stretch">
+              <div
+                class="card hover-item"
+                [routerLink]="['/physical']"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <div class="card-body">
+                  <img src="assets/physical.png" alt="" style="width: 100%" />
+                  <p
+                    class="details"
+                    style="text-align: center; margin-bottom: 1%"
+                  >
+                    Physical
+                  </p>
+                  <p class="card_details">
+                    visit our nearest showroom for inspection.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-flex align-items-stretch">
+              <div
+                class="card hover-item"
+                data-dismiss="modal"
+                aria-label="Close"
+                [routerLink]="['/door']"
+              >
+                <div class="card-body">
+                  <img src="assets/door_step.png" alt="" style="width: 100%" />
+                  <p
+                    class="details"
+                    style="text-align: center; margin-bottom: 1%"
+                  >
+                    Door-Step
+                  </p>
+                  <p class="card_details">
+                    Our Specialist will visit your place @ just ₹ 250 /-
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

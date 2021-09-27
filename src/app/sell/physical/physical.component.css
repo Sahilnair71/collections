@@ -1,0 +1,135 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+.vertical {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+.small_details {
+  color: #295f73;
+  font-size: 1vw;
+}
+._details {
+  color: #295f73;
+  font-size: 1vw;
+  text-align: center;
+}
+.showroom {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.info {
+  font-size: 1.1vw;
+}
+.active {
+  background-color: #003444;
+  color: #ffffff;
+}
+.card_inactive {
+  border: 1px solid #bcd0d7;
+  color: #295f73;
+}
+.choose {
+  color: #003444;
+  font-weight: 600;
+}
+.card_padding {
+  padding: 1rem;
+  font-size: 1.2vw;
+}
+.active_1 {
+  background-color: #18b46b;
+  color: #ffffff;
+}
+.card_inactive_1 {
+  border: #18b46b 1px solid;
+  color: #18b46b;
+}
+.proceed {
+  background: #18b46b;
+  box-shadow: 3px 3px 10px #00000029;
+  border: 3px solid #b1d2c3;
+  border-radius: 5px;
+  opacity: 1;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width: 576px) {
+  .details {
+    color: #003444;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+  .home {
+    color: #1a3d4a;
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+
+  .sellbikes {
+    color: #00aa13;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .small_details {
+    color: #295f73;
+    font-size: 1.5vw;
+  }
+  ._details {
+    color: #295f73;
+    font-size: 1.8vw;
+  }
+  .showroom {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .info {
+    font-size: 2.2vw;
+  }
+  .active {
+    background-color: #003444;
+    color: #ffffff;
+    margin-top: 5%;
+  }
+  .card_inactive {
+    border: 1px solid #bcd0d7;
+    color: #295f73;
+    margin-top: 5%;
+  }
+
+  .card_padding {
+    padding: 0.3rem;
+    font-size: 3vw;
+  }
+  .card_margin {
+    margin-bottom: 20%;
+  }
+}

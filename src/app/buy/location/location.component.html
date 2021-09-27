@@ -1,0 +1,50 @@
+<app-header></app-header>
+<br />
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <p class="sellbikes">BUY HYBRID BIKES AT GREEN TIGER</p>
+    <p class="home">HOME > BUY</p>
+    <div class="col-5 colpadding">
+      <hr />
+    </div>
+
+    <p class="details">LOCATION DETAILS</p>
+  </div>
+</div>
+
+<div class="bgcolor">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="form-group">
+        <br />
+        <label for="exampleInputEmail1 " class="italic"
+          >Choose Your City :</label
+        >
+        <div class="row">
+          <div class="col-3 col-sm-2" *ngFor="let item of city">
+            <div style="padding: 0">
+              <img
+                [src]="item.img"
+                alt=""
+                class="images"
+                [routerLink]="['/bikes']"
+                routerLinkActive="router-link-active"
+              />
+
+              <div class="row justify-content-center">
+                <div class="col-6" style="padding: 0px">
+                  <p class="cityname">{{ item.name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br /><br />
+<!-- Footer component -->
+<app-footer></app-footer>

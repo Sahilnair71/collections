@@ -1,0 +1,88 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.thank_you {
+  font-size: 1.4vw;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+ul.a {
+  list-style-type: circle;
+  font-size: 1.3vw;
+}
+
+.verificatrion {
+  color: #003444;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.documents_ready {
+  font-size: 1vw;
+}
+.proceed {
+  background: #18b46b;
+  box-shadow: 3px 3px 10px #00000029;
+  border: 3px solid #b1d2c3;
+  border-radius: 5px;
+  opacity: 1;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 576px) {
+  .home {
+    color: #1a3d4a;
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+
+  .sellbikes {
+    color: #00aa13;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .details {
+    color: #003444;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+
+  .thank_you {
+    font-size: 2.8vw;
+  }
+  ul.a {
+    list-style-type: circle;
+    font-size: 2.8vw;
+    text-align: center;
+  }
+
+  .verificatrion {
+    color: #003444;
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8%;
+  }
+  .documents_ready {
+    font-size: 2.2vw;
+    text-align: center;
+  }
+}

@@ -1,0 +1,70 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+.bgcolor {
+  background: #ebebebc2;
+}
+.images {
+  width: 100%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.cityname {
+  font-size: 1vw;
+}
+.italic {
+  font-style: italic;
+  font-size: 1.3vw;
+  color: #295f73;
+}
+
+@media screen and (max-width: 576px) {
+  .home {
+    color: #1a3d4a;
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+
+  .sellbikes {
+    color: #00aa13;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .details {
+    color: #003444;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+  .italic {
+    font-style: italic;
+    font-size: 3vw;
+    color: #003444;
+  }
+  .cityname {
+    font-size: 2.2vw;
+  }
+}

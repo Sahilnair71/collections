@@ -1,0 +1,194 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.bgcolor {
+  background: #ebebebc2;
+}
+
+.card_margin {
+  margin-top: 1%;
+}
+.col_padding {
+  padding: 1%;
+}
+
+.bikes_name {
+  text-align: center;
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-top: 4%;
+}
+
+.dis_rate {
+  padding: 1%;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #18b46b;
+}
+.footer_background {
+  background: transparent;
+}
+
+.og_rate {
+  padding: 1%;
+  text-align: center;
+  font-size: 1.2vw;
+  color: #9f9f9f;
+  text-decoration: line-through;
+}
+.hover_item {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hover_item:hover {
+  box-shadow: 5px 5px 10px #00000029;
+  border: 1px solid #295f73;
+  transform: translate(0, -10px);
+}
+.hover_item:hover .footer_background {
+  border-top: 1px solid #295f73;
+}
+.footer_pdding {
+  padding: 3%;
+  font-size: 1vw;
+}
+.city_margin {
+  margin-top: 0.8vw;
+}
+.filter_background {
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.brand {
+  font-size: 1.5vw;
+  color: #2a5f72;
+  font-weight: 600;
+}
+
+.navbar_styling {
+  border-bottom: #2a5f72 1px solid;
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+.larger {
+  margin-top: 3%;
+}
+.showmore {
+  border: none;
+  outline: none;
+  color: #18b46b;
+  background: none;
+  margin-top: 4%;
+}
+@media screen and (max-width: 576px) {
+  .home {
+    color: #1a3d4a;
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+
+  .sellbikes {
+    color: #00aa13;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .details {
+    color: #003444;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+  .showmore {
+    border: none;
+    outline: none;
+    color: #18b46b;
+    font-size: 2.3vw;
+    background: none;
+    margin-top: 4%;
+  }
+  .padding_card {
+    padding: 0.6rem;
+  }
+  .bikes_name {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+  .dis_rate {
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #18b46b;
+  }
+  .og_rate {
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #9f9f9f;
+    text-decoration: line-through;
+  }
+  .footer_pdding {
+    padding: 3%;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+  .container_padding {
+    padding: 0px;
+    padding-bottom: 4%;
+  }
+  .side_scroller {
+    font-size: 2.6vw;
+  }
+  .brand {
+    font-size: 2.9vw;
+    color: #2a5f72;
+    font-weight: 600;
+  }
+  .navbar_styling {
+    border-bottom: #2a5f72 1px solid;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-size: 2.3vw;
+  }
+  .form-control {
+    font-size: 2.3vw;
+  }
+}

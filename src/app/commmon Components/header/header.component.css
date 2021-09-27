@@ -24,7 +24,7 @@
   left: 73vw;
 
   background-color: #fff;
-  box-shadow: -5px 5px 10px #00000029;
+  /* box-shadow: -5px 5px 10px #00000029; */
 }
 
 .overlay-content {
@@ -42,6 +42,11 @@
   color: #000;
   display: block;
   transition: 0.3s;
+}
+.form-control:focus {
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .overlay a:hover,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import Stepper from 'bs-stepper';
 import { NgxOtpInputConfig } from 'ngx-otp-input';
 
@@ -8,6 +8,9 @@ import { NgxOtpInputConfig } from 'ngx-otp-input';
   styleUrls: ['./stepper.component.css'],
 })
 export class StepperComponent implements OnInit {
+  @Output() SUbmittedValue = new EventEmitter<any>();
+
+  submitted = false;
   public settings = {
     length: 4,
     numbersOnly: true,
@@ -38,6 +41,7 @@ export class StepperComponent implements OnInit {
   step5 = false;
   final = false;
   otp_form = false;
+
   otpInputConfig: NgxOtpInputConfig = {
     otpLength: 6,
     autofocus: true,
@@ -150,6 +154,10 @@ export class StepperComponent implements OnInit {
   onSubmit() {
     return false;
   }
+  otpSubmit() {
+    this.submitted = true;
+    this.SUbmittedValue.emit(this.submitted);
+  }
   onCity(cityname: any) {
     this.city_name = cityname;
     this.stepper.next();
@@ -209,7 +217,8 @@ export class StepperComponent implements OnInit {
 
     const interval = setInterval(() => {
       this.seconds = counter;
-      console.log(counter);
+      this.seconds = this.transform(this.seconds);
+
       counter--;
 
       if (counter < 0) {
@@ -217,9 +226,23 @@ export class StepperComponent implements OnInit {
       }
     }, 1000);
   }
+  transform(value: number, args?: any) {
+    const hours: number = Math.floor(value / 60);
+    const minutes: number = value - hours * 60;
+
+    if (hours < 10 && minutes < 10) {
+      return '0' + hours + ' : 0' + (value - hours * 60);
+    } else if (hours > 10 && minutes > 10) {
+      return '0' + hours + ' : ' + (value - hours * 60);
+    } else if (hours > 10 && minutes < 10) {
+      return hours + ' : 0' + (value - hours * 60);
+    } else {
+      return '0' + hours + ' : ' + (value - hours * 60);
+    }
+  }
   getQuotation() {
     this.otp_form = true;
-    console.log(this.otp_form);
+
     this.update_time();
   }
 

@@ -1,0 +1,188 @@
+.home {
+  color: #1a3d4a;
+  font-size: 1.2vw;
+  margin-bottom: 0px;
+}
+
+.sellbikes {
+  color: #00aa13;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.colpadding {
+  padding: 0px;
+}
+hr {
+  border-top: 1px solid #295f73;
+  margin-top: 1%;
+}
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.border {
+  border: 1px solid #295f73 !important;
+}
+.hover {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 0.5;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  box-shadow: 5px 5px 10px #00000029;
+  border: 1px solid #295f73;
+}
+.img_slider_width {
+  height: 40vw;
+  width: 50vw;
+  border: #295f73 1px solid;
+}
+.rate_card {
+  border: 1px solid #295f73;
+  border-radius: 10px;
+}
+.padding {
+  padding: 5%;
+}
+.bike_name {
+  color: #003444;
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+.og_rate {
+  font-size: 1vw;
+  color: #9f9f9f;
+  text-decoration: line-through;
+}
+.dis_amount {
+  font-size: 1vw;
+
+  color: #18b46b;
+}
+.speed_values {
+  font-size: 1vw;
+}
+.margin_top {
+  margin-top: 4%;
+}
+.bold {
+  font-size: 1.1vw;
+  color: #003444;
+  font-weight: 600;
+}
+.light {
+  font-size: 0.6vw;
+}
+.BAS {
+  background: #003444;
+  color: #ffffff;
+  font-size: 1vw;
+}
+.similar_bikes {
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 576px) {
+  .similar_bikes {
+    font-size: 4.5vw;
+    margin-top: 3%;
+  }
+  .img_slider_width {
+    height: 80vw;
+    width: 100%;
+    border: #295f73 1px solid;
+  }
+  .BAS {
+    background: #003444;
+    color: #ffffff;
+    font-size: 4.2vw;
+    width: 100%;
+  }
+  .bold {
+    font-size: 2.5vw;
+    color: #003444;
+    font-weight: 600;
+  }
+  .light {
+    font-size: 1.8vw;
+  }
+  .og_rate {
+    font-size: 3vw;
+    color: #9f9f9f;
+    text-decoration: line-through;
+  }
+  .bike_name {
+    color: #003444;
+    font-weight: 600;
+    font-size: 4vw;
+  }
+  .speed_values {
+    font-size: 2.7vw;
+  }
+
+  .dis_amount {
+    font-size: 2.7vw;
+    color: #18b46b;
+  }
+  .home {
+    color: #1a3d4a;
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+
+  .sellbikes {
+    color: #00aa13;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .details {
+    color: #003444;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-bottom: 1%;
+  }
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 200px;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: -19px;
+}
+
+.arrow--right {
+  left: auto;
+  right: -19px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}

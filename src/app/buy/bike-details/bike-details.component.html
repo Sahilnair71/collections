@@ -1,0 +1,185 @@
+<app-header></app-header>
+<br />
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-11 col-sm-10">
+    <p class="sellbikes">BUY HYBRID BIKES AT GREEN TIGER</p>
+    <p class="home">HOME > BUY</p>
+    <div class="col-5 colpadding">
+      <hr />
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-3 col-sm-4 container_padding">
+        <p class="details">BIKE DETAILS</p>
+      </div>
+      <div class="col-9 col-sm-4">
+        <div class="row">
+          <div class="col-8 col-sm-6">
+            <select class="form-control form-control-sm">
+              <option [ngValue]="null" selected disabled>Sort By</option>
+              <option>Price:Low To High</option>
+              <option>Price: High To Low</option>
+            </select>
+          </div>
+          <div class="col-4 col-sm-6 details container_padding">FILTERS :</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bgcolor">
+  <br />
+  <div class="container">
+    <div class="row">
+      <!-- Bikes -->
+      <div class="col-7 col-sm-8">
+        <div class="row">
+          <div
+            *ngFor="let item of bikes"
+            class="col-6 col-sm-4 d-flex flex-column align-items-stretch col_padding"
+            [routerLink]="['/details']"
+          >
+            <div class="card flex-grow-1 card_margin hover_item">
+              <div class="card-body card_padding padding_card">
+                <img [src]="item.img" alt="" style="width: 100%" />
+                <p class="bikes_name">{{ item.name }}</p>
+                <div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 dis_rate">₹ {{ item.pay }}</div>
+                    <div class="col-6 og_rate">₹ {{ item.cost }}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer footer_background padding_card">
+                <div class="row">
+                  <div class="col-12 col-sm-6" style="padding: 1%">
+                    <div class="row">
+                      <div class="col-1" style="padding: 0px">
+                        <img src="assets/plug.png" alt="" style="width: 100%" />
+                      </div>
+                      <div class="col-10 col-sm-11 footer_pdding">5 hours</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6" style="padding: 1%">
+                    <div class="row">
+                      <div class="col-1" style="padding: 0px">
+                        <img
+                          src="assets/battery.png"
+                          alt=""
+                          style="width: 100%"
+                        />
+                      </div>
+                      <div class="col-10 col-sm-11 footer_pdding">3000 Wh</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6" style="padding: 1%">
+                    <div class="row">
+                      <div class="col-1" style="padding: 0px">
+                        <img
+                          src="assets/location.png"
+                          alt=""
+                          style="width: 100%"
+                        />
+                      </div>
+                      <div class="col-10 col-sm-11 footer_pdding">
+                        Bangalore
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6" style="padding: 1%">
+                    <div class="row">
+                      <div class="col-1" style="padding: 0px">
+                        <img
+                          src="assets/person.png"
+                          alt=""
+                          style="width: 100%"
+                        />
+                      </div>
+                      <div class="col-10 col-sm-11 footer_pdding">1 Owner</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Filters -->
+      <div class="col-5 col-sm-4">
+        <div class="container container_padding">
+          <div class="city_margin">
+            <select class="form-control">
+              <option [ngValue]="null" selected disabled>Sort By</option>
+              <option>Price:Low To High</option>
+              <option>Price: High To Low</option>
+            </select>
+          </div>
+          <br />
+          <div class="filter_background">
+            <p class="brand">Brands</p>
+
+            <div>
+              <input
+                class="navbar_styling navbar-input"
+                type="text"
+                placeholder="&#xF002; Search Brands"
+                style="font-family: Arial, FontAwesome"
+                name=""
+              />
+            </div>
+            <br />
+            <div>
+              <div class="side_scroller">
+                <div
+                  *ngFor="
+                    let item of checkbox_brand.slice(
+                      this.startPage,
+                      this.paginationLimit
+                    );
+                    let i = index
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    class="larger"
+                    (click)="changed(item.brand)"
+                  />
+                  {{ item.brand }}
+                  <div *ngIf="item.brand == this.isChecked && this.ishown">
+                    <p>Pick Model</p>
+                    <div
+                      *ngFor="let item1 of item.value"
+                      style="padding-left: 5%"
+                    >
+                      <input type="checkbox" class="larger" />
+                      {{ item1 }}
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    *ngIf="showmore"
+                    (click)="showMoreItems()"
+                    class="showmore"
+                  >
+                    +View More
+                  </button>
+                  <button
+                    *ngIf="showless"
+                    (click)="showLessItems()"
+                    class="showmore"
+                  >
+                    -View Less
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

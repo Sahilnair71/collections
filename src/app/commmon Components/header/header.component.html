@@ -5,7 +5,34 @@
 
   <!-- <form class="form-inline "> -->
   <div class="header-search d-none d-sm-block">
-    <input
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <button
+          class="btn btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="border: 1px solid #ced4da; border-right: none"
+        >
+          Select City
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Bangalore</a>
+          <a class="dropdown-item" href="#">Pune</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Other Cities</a>
+        </div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Text input with dropdown button"
+        style="border-left: none"
+      />
+    </div>
+
+    <!-- <input
       class="form-control search-city"
       type="search"
       placeholder=""
@@ -21,9 +48,7 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+      
         Select City
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,10 +57,9 @@
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Other Cities</a>
       </div>
-    </li>
+    </li> -->
   </div>
-  <!-- <button class="btn btn-outline-success " type="submit">Search</button>  -->
-  <!-- </form> -->
+
   <button
     class="navbar-toggler"
     type="button"
@@ -112,33 +136,31 @@
 <nav>
   <!-- <form class="form-inline "> -->
   <div class="header-search d-block d-sm-none">
-    <input
-      class="form-control search-city"
-      type="search"
-      placeholder=""
-      aria-label="Search"
-    />
-    <li class="nav-item dropdown select-city">
-      <a
-        class="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdown"
-        role="button"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-        Select City
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Bangalore</a>
-        <a class="dropdown-item" href="#">Pune</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Other Cities</a>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <button
+          class="btn btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="border: 1px solid #ced4da; border-right: none"
+        >
+          Select City
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Bangalore</a>
+          <a class="dropdown-item" href="#">Pune</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Other Cities</a>
+        </div>
       </div>
-    </li>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Text input with dropdown button"
+        style="border-left: none"
+      />
+    </div>
   </div>
 </nav>

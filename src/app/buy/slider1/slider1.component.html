@@ -1,0 +1,84 @@
+<div class="navigation-wrapper">
+  <div class="keen-slider" #sliderRef>
+    <div
+      class="keen-slider__slide"
+      *ngFor="let item of bikes"
+      [routerLink]="['/details']"
+    >
+      <div class="card flex-grow-1 card_margin hover_item">
+        <div class="card-body card_padding padding_card">
+          <img [src]="item.img" alt="" style="width: 100%" />
+          <p class="bikes_name">{{ item.name }}</p>
+          <div>
+            <div class="row justify-content-center">
+              <div class="col-6 dis_rate">₹ {{ item.pay }}</div>
+              <div class="col-6 og_rate">₹ {{ item.cost }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer footer_background padding_card">
+          <div class="row">
+            <div class="col-12 col-sm-6" style="padding: 1%">
+              <div class="row">
+                <div class="col-1" style="padding: 0px">
+                  <img src="assets/plug.png" alt="" style="width: 100%" />
+                </div>
+                <div class="col-10 col-sm-11 footer_pdding">5 hours</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6" style="padding: 1%">
+              <div class="row">
+                <div class="col-1" style="padding: 0px">
+                  <img src="assets/battery.png" alt="" style="width: 100%" />
+                </div>
+                <div class="col-10 col-sm-11 footer_pdding">3000 Wh</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6" style="padding: 1%">
+              <div class="row">
+                <div class="col-1" style="padding: 0px">
+                  <img src="assets/location.png" alt="" style="width: 100%" />
+                </div>
+                <div class="col-10 col-sm-11 footer_pdding">Bangalore</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6" style="padding: 1%">
+              <div class="row">
+                <div class="col-1" style="padding: 0px">
+                  <img src="assets/person.png" alt="" style="width: 100%" />
+                </div>
+                <div class="col-10 col-sm-11 footer_pdding">1 Owner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg
+    [ngClass]="
+      'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+    "
+    (click)="slider.prev()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+    />
+  </svg>
+  <svg
+    *ngIf="slider"
+    [ngClass]="
+      'arrow arrow--right ' +
+      (slider.details().size - 1 === currentSlide ? 'arrow--disabled' : '')
+    "
+    (click)="slider.next()"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+  </svg>
+</div>

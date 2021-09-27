@@ -1,0 +1,90 @@
+<app-header></app-header>
+<br />
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <p class="sellbikes">SELL YOUR BIKE TO GREEN TIGER</p>
+    <p class="home">HOME > SELL > PHYSICAL INSPECTION</p>
+    <div class="col-5 colpadding">
+      <hr />
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-10 col-sm-6">
+    <div class="row">
+      <div class="col-6 col-sm-4" style="padding-right: 0px">
+        <img src="assets/physical.png" alt="" style="width: 100%" />
+      </div>
+      <div class="col-6 vertical" style="padding-left: 0px">
+        <div>
+          <p class="details">Physical Inspection</p>
+          <p class="small_details">
+            Visit Our Nearest Showroom For Inspection.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p class="_details">
+      Choose A Showroom Nearest To You For Physical Inspection By Our Specialist
+      @ Free Of Cost And Get The Estimation For Your Vehicle.
+    </p>
+    <div class="row justify-content-centert">
+      <div class="col-12 col-sm-8">
+        <select class="form-control form-control-sm">
+          <option [ngValue]="null" selected disabled>City</option>
+          <option>Mumbai</option>
+          <option>Pune</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div *ngFor="let item of showrooms" class="col-12 col-sm-4">
+        <div
+          class="card flex-grow-1"
+          (click)="show_selected(item)"
+          [ngClass]="item == show_val ? 'active' : 'card_inactive'"
+        >
+          <div class="card-body card_padding">
+            <div class="showroom">{{ item.city }}</div>
+            <div style="font-style: italic" class="info">{{ item.info }}</div>
+            <div class="info">city - {{ item.code }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p class="choose">Choose Preferred Date :</p>
+    <br />
+    <div class="row">
+      <div *ngFor="let item of dates" class="col-3 col-sm-2">
+        <div
+          class="card flex-grow-1 card_margin"
+          (click)="date_selected(item)"
+          [ngClass]="item == this.date_value ? 'active_1' : 'card_inactive_1'"
+        >
+          <div class="card-body card_padding">
+            <div>{{ item.month }}</div>
+            <div style="font-style: italic">{{ item.day }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="row justify-content-center">
+      <div class="col-9 col-sm-6">
+        <button class="proceed" [routerLink]="['/success']">
+          BOOK APPOINTMENT
+        </button>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+<br />
+<br />
+<!-- Footer component -->
+<app-footer></app-footer>

@@ -13,9 +13,16 @@
 <!-- stepper -->
 <div class="bgcolor">
   <div class="container">
-    <app-stepper></app-stepper>
+    <app-stepper (SUbmittedValue)="otpVal($event)"></app-stepper>
   </div>
 </div>
+<!-- Estimated Price -->
+<div *ngIf="submitted">
+  <div class="container">
+    <app-estimatedcost></app-estimatedcost>
+  </div>
+</div>
+
 <!-- the next steps -->
 <div class="container">
   <div class="row justify-content-center">

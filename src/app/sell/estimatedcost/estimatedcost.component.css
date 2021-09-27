@@ -1,0 +1,79 @@
+.details {
+  color: #003444;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-top: 3%;
+}
+.approx {
+  color: #000000;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.cost {
+  color: #295f73;
+  font-size: 2.1vw;
+  font-weight: 600;
+  text-align: center;
+}
+.note {
+  color: #000000;
+  font-size: 1vw;
+  text-align: center;
+}
+.button_Quotation {
+  background: #18b46b 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border: 3px solid #b1d2c3;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+.hover-item {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hover-item:hover {
+  box-shadow: 5px 5px 10px #00000029;
+  border: 1px solid #bcd0d7;
+  transform: translate(0, -10px);
+}
+.card_details {
+  color: #295f73;
+  font-size: 0.6vw;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .details {
+    color: #003444;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-top: 3%;
+  }
+  .approx {
+    color: #000000;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .cost {
+    color: #295f73;
+    font-size: 3.1vw;
+    font-weight: 600;
+    text-align: center;
+  }
+  .note {
+    color: #000000;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .button_Quotation {
+    font-size: 2.6vw;
+  }
+  .card_details {
+    color: #295f73;
+    font-size: 1.6vw;
+    text-align: center;
+  }
+}

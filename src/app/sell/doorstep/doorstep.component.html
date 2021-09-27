@@ -1,0 +1,105 @@
+<app-header></app-header>
+<br />
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <p class="sellbikes">SELL YOUR BIKE TO GREEN TIGER</p>
+    <p class="home">HOME > SELL > DOORSTEP INSPECTION</p>
+    <div class="col-7 col-sm-5 colpadding">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-10 col-sm-6">
+    <div class="row">
+      <div class="col-6 col-sm-4" style="padding-right: 0px">
+        <img src="assets/door_step.png" alt="" style="width: 100%" />
+      </div>
+      <div class="col-6 vertical" style="padding-left: 0px">
+        <div>
+          <p class="details">Door-Step</p>
+          <p class="small_details">Our Specialist Will Visit Your Place.</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p class="_details">
+      @ just <span style="color: #18b46b">₹ 250 /</span>- have the ease of being
+      in your home and the inspection process will be conducted by our
+      specialist at your doorstep
+    </p>
+    <br />
+    <div class="container">
+      <div class="form-group">
+        <input class="form-control inputs_tag" placeholder="Name" />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          class="form-control inputs_tag"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Door No / Floor no/ Apartment Tower no"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          class="form-control inputs_tag"
+          placeholder="Street name/Apartment name"
+        />
+      </div>
+
+      <div class="form-group">
+        <input class="form-control inputs_tag" placeholder="Landmark" />
+      </div>
+      <p class="choose">Choose Preferred Date :</p>
+      <br />
+      <div class="row">
+        <div *ngFor="let item of dates" class="col-3 col-sm-2">
+          <div
+            class="card flex-grow-1 card_margin"
+            (click)="date_selected(item)"
+            [ngClass]="item == this.date_value ? 'active' : 'card_inactive'"
+          >
+            <div class="card-body card_padding">
+              <div>{{ item.month }}</div>
+              <div style="font-style: italic">{{ item.day }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p class="choose">Choose Preferred Time :</p>
+      <div class="row">
+        <div class="col-6 col-sm-4">
+          <select class="form-control form-control-sm">
+            <option [ngValue]="null" selected disabled>Time</option>
+            <option>12:00</option>
+            <option>1:00</option>
+            <option>2:00</option>
+          </select>
+        </div>
+        <div class="col-6 col-sm-4">
+          <select class="form-control form-control-sm">
+            <option [ngValue]="null" selected disabled>Am/Pm</option>
+            <option>Am</option>
+            <option>Pm</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-9 col-sm-6">
+          <button class="proceed" [routerLink]="['/pay']">
+            PROCEED TO PAY
+          </button>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+    </div>
+  </div>
+</div>

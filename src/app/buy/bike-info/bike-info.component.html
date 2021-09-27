@@ -1,0 +1,202 @@
+<app-header></app-header>
+<br />
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-12 col-sm-10">
+    <p class="sellbikes">BUY HYBRID BIKES AT GREEN TIGER</p>
+    <p class="home">HOME > BUY</p>
+    <div class="col-5 colpadding">
+      <hr />
+    </div>
+
+    <div class="row justify-content-between">
+      <div class="col-6 col-sm-4 container_padding">
+        <p class="details">KTM RC 200</p>
+      </div>
+    </div>
+    <br />
+    <!-- image slider -->
+    <div class="row">
+      <div class="col-12 col-sm-8">
+        <div class="navigation-wrapper img_slider_width">
+          <div
+            class="keen-slider keen-slider--vertical"
+            (mouseover)="setPause(true)"
+            (mouseout)="setPause(false)"
+            #sliderRef
+          >
+            <div *ngFor="let item of images" class="keen-slider__slide">
+              <div>
+                <img [src]="item" alt="" style="width: 100%" />
+              </div>
+            </div>
+          </div>
+          <svg
+            [ngClass]="
+              'arrow arrow--left ' +
+              (currentSlide === 0 ? 'arrow--disabled' : '')
+            "
+            (click)="slider.prev()"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 25"
+            style="background: #295f73; border-radius: 50%"
+          >
+            <path
+              d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+            />
+          </svg>
+          <svg
+            *ngIf="slider"
+            [ngClass]="
+              'arrow arrow--right ' +
+              (slider.details().size - 1 === currentSlide
+                ? 'arrow--disabled'
+                : '')
+            "
+            (click)="slider.next()"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            style="background: #295f73; border-radius: 50%"
+          >
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+          </svg>
+        </div>
+        <!-- thumbnail slider -->
+        <div class="keen-slider" #sliderRef1 style="margin-top: 5%">
+          <div
+            *ngFor="let item of images; let i = index"
+            class="keen-slider__slide"
+            [ngClass]="i == currentSlide ? 'hover' : 'border'"
+          >
+            <div>
+              <img
+                [src]="item"
+                alt=""
+                style="width: 100%"
+                (click)="slider.moveToSlideRelative(i)"
+              />
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="rate_card">
+          <div class="padding">
+            <p class="bike_name">KTM RC 200</p>
+            <div class="row">
+              <div class="col-4 dis_amount colpadding">₹ 75,000</div>
+              <div class="col-4 og_rate colpadding">₹ 85,000</div>
+            </div>
+            <div class="row">
+              <div class="col-6 colpadding">
+                <div class="row margin_top">
+                  <div class="col-3" style="padding-left: 0%">
+                    <img
+                      src="assets/speedometer.png"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-8 colpadding speed_values">25,000 kms</div>
+                </div>
+              </div>
+              <div class="col-6 colpadding">
+                <div class="row margin_top">
+                  <div class="col-3" style="padding-left: 0%">
+                    <img src="assets/settings.png" alt="" style="width: 100%" />
+                  </div>
+                  <div class="col-8 colpadding speed_values">200 CC</div>
+                </div>
+              </div>
+              <div class="col-6 colpadding margin_top">
+                <div class="row margin_top">
+                  <div class="col-3" style="padding-left: 0%">
+                    <img src="assets/location.png" alt="" style="width: 100%" />
+                  </div>
+                  <div class="col-8 colpadding speed_values">25,000 kms</div>
+                </div>
+              </div>
+              <div class="col-6 colpadding margin_top">
+                <div class="row margin_top">
+                  <div class="col-3" style="padding-left: 0%">
+                    <img
+                      src="assets/people_logo.png"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-8 colpadding speed_values">200 CC</div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row justify-content-center">
+              <div class="col-4" style="padding-right: 8px; padding-left: 8px">
+                <div class="card">
+                  <div
+                    class="card-body"
+                    style="padding: 0.25rem; text-align: center"
+                  >
+                    <img src="assets/plug.png" alt="" style="width: 30%" />
+                    <div class="bold">5 Hours</div>
+                    <div class="light">Charge Time</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4" style="padding-right: 8px; padding-left: 8px">
+                <div class="card">
+                  <div
+                    class="card-body"
+                    style="padding: 0.25rem; text-align: center"
+                  >
+                    <img src="assets/battery.png" alt="" style="width: 30%" />
+                    <div class="bold">300 Wh</div>
+                    <div class="light">Battery</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4" style="padding-right: 8px; padding-left: 8px">
+                <div class="card">
+                  <div
+                    class="card-body"
+                    style="padding: 0.25rem; text-align: center"
+                  >
+                    <img
+                      src="assets/speedometer.png"
+                      alt=""
+                      style="width: 30%"
+                    />
+                    <div class="bold">70 Mph</div>
+                    <div class="light">Top Speed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input class="form-control margin_top" placeholder="Name" />
+            <input class="form-control margin_top" placeholder="Phone number" />
+            <select class="form-control margin_top">
+              <option [ngValue]="null" selected disabled>Pin Code</option>
+              <option>4087</option>
+              <option>4086</option>
+            </select>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-8">
+                <button class="BAS margin_top">BUY AT SHOWROOM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="text-align: center" class="similar_bikes">
+  Similar Bikes in
+  <span style="color: #18b46b; font-weight: 600"> Banglore</span>
+</p>
+<br />
+<div class="container">
+  <app-slider1></app-slider1>
+</div>
