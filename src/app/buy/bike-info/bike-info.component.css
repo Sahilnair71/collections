@@ -3,6 +3,10 @@
   font-size: 1.2vw;
   margin-bottom: 0px;
 }
+.otptext {
+  font-size: 1vw;
+  color: #295f73;
+}
 
 .sellbikes {
   color: #00aa13;
@@ -84,8 +88,47 @@ hr {
 .similar_bikes {
   font-size: 1.5vw;
 }
+.modal-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.otptext {
+  font-size: 1vw;
+  color: #295f73;
+}
+.resend {
+  color: #295f73;
+  border-left: #295f73 1px solid;
+  font-size: 1vw;
+}
+.modal-header {
+  border-bottom: none;
+}
+.pmarg {
+  margin: 0px;
+}
+.resend_code {
+  color: #003444;
+  font-size: 1.2vw;
+  text-align: center;
+}
+.display {
+  display: none !important;
+}
 
 @media screen and (max-width: 576px) {
+  .otptext {
+    font-size: 2.5vw;
+    color: #295f73;
+  }
   .similar_bikes {
     font-size: 4.5vw;
     margin-top: 3%;
@@ -176,6 +219,19 @@ hr {
 
 .arrow--left {
   left: -19px;
+}
+.resend {
+  color: #295f73;
+  border-left: #295f73 1px solid;
+  font-size: 2.5vw;
+}
+.resend_code {
+  color: #003444;
+  font-size: 2.5vw;
+  text-align: center;
+}
+.timer {
+  font-size: 2.5vw;
 }
 
 .arrow--right {

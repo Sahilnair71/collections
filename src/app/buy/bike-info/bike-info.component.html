@@ -182,7 +182,13 @@
             </select>
             <div class="row justify-content-center">
               <div class="col-12 col-sm-8">
-                <button class="BAS margin_top">BUY AT SHOWROOM</button>
+                <button
+                  class="BAS margin_top"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter1"
+                >
+                  BUY AT SHOWROOM
+                </button>
               </div>
             </div>
           </div>
@@ -202,3 +208,72 @@
 </div>
 <br /><br />
 <app-footer></app-footer>
+<div
+  class="modal fade"
+  id="exampleModalCenter1"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div>
+      <div class="modal-content">
+        <div *ngIf="submitted == false">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              OTP Verification
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="otptext">
+              we sent you an SMS code on number :+91 9876543210
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <ngx-otp-input
+                  [config]="otpInputConfig"
+                  (otpChange)="handeOtpChange($event)"
+                  (fill)="handleFillEvent($event)"
+                >
+                </ngx-otp-input>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-3 timer" *ngIf="seconds != 0">
+                {{ seconds }}
+              </div>
+              <div class="col-6 resend">
+                <p class="pmarg">Code not received?</p>
+              </div>
+            </div>
+            <div style="text-align: center">
+              <a href="" class="resend_code">Resend Code</a>
+            </div>
+            <br />
+
+            <button
+              type="button"
+              class="btn btn-primary button_Quotation"
+              style="width: 338px"
+              data-dismiss="modal"
+              [routerLink]="['/']"
+              (click)="this.Onsubmitted()"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

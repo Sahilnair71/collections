@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import KeenSlider from 'keen-slider';
+import { NgxOtpInputConfig } from 'ngx-otp-input';
 
 @Component({
   selector: 'app-slider1',
@@ -8,6 +9,7 @@ import KeenSlider from 'keen-slider';
 })
 export class Slider1Component implements OnInit {
   constructor() {}
+
   bikes = [
     {
       img: 'assets/buy_bikes.png',
