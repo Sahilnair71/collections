@@ -319,45 +319,50 @@
       </div>
       <div class="modal-body">
         <div>
-          <div class="side_scroller">
-            <div
-              *ngFor="
-                let item of checkbox_brand.slice(
-                  this.startPage,
-                  this.paginationLimit
-                );
-                let i = index
-              "
-            >
-              <input
-                type="checkbox"
-                class="larger"
-                (click)="changed(item.brand)"
-              />
-              {{ item.brand }}
-              <div *ngIf="item.brand == this.isChecked && this.ishown">
-                <p>Pick Model</p>
-                <div *ngFor="let item1 of item.value" style="padding-left: 5%">
-                  <input type="checkbox" class="larger" />
-                  {{ item1 }}
+          <div>
+            <div class="side_scroller">
+              <div
+                *ngFor="
+                  let item of checkbox_brand.slice(
+                    this.startPage,
+                    this.paginationLimit
+                  );
+                  let i = index
+                "
+              >
+                <input
+                  type="checkbox"
+                  class="larger"
+                  (click)="changed(item.brand)"
+                />
+                {{ item.brand }}
+                <div *ngIf="item.brand == this.isChecked && this.ishown">
+                  <p>Pick Model</p>
+                  <div
+                    *ngFor="let item1 of item.value"
+                    style="padding-left: 5%"
+                  >
+                    <input type="checkbox" class="larger" />
+                    {{ item1 }}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <button
-                *ngIf="showmore"
-                (click)="showMoreItems()"
-                class="showmore"
-              >
-                +View More
-              </button>
-              <button
-                *ngIf="showless"
-                (click)="showLessItems()"
-                class="showmore"
-              >
-                -View Less
-              </button>
+              <div>
+                <button
+                  *ngIf="showmore"
+                  (click)="showMoreItems()"
+                  class="showmore"
+                >
+                  +View More
+                </button>
+                <button
+                  *ngIf="showless"
+                  (click)="showLessItems()"
+                  class="showmore"
+                >
+                  -View Less
+                </button>
+              </div>
             </div>
           </div>
         </div>

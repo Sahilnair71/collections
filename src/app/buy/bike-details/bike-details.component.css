@@ -191,7 +191,7 @@ hr {
     border: none;
     outline: none;
     color: #18b46b;
-    font-size: 2.3vw;
+    font-size: 4vw;
     background: none;
     margin-top: 4%;
   }
@@ -231,7 +231,7 @@ hr {
     padding-bottom: 4%;
   }
   .side_scroller {
-    font-size: 2.6vw;
+    font-size: 4vw;
   }
   .brand {
     font-size: 2.9vw;
@@ -249,5 +249,11 @@ hr {
   }
   .form-control {
     font-size: 2.3vw;
+  }
+  .scroll {
+    /* background-color:#CCC; */
+    overflow-y: auto;
+
+    position: relative;
   }
 }
