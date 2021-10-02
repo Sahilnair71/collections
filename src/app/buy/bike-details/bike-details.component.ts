@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-bike-details',
@@ -15,6 +15,7 @@ export class BikeDetailsComponent implements OnInit {
   size: number;
 
   constructor() {}
+
   bikes = [
     {
       img: 'assets/buy_bikes.png',
@@ -193,6 +194,7 @@ export class BikeDetailsComponent implements OnInit {
     this.showless = false;
     this.showmore = true;
   }
+
   ngOnInit(): void {
     this.paginationLimit = 10;
     this.startPage = 0;

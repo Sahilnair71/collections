@@ -22,6 +22,7 @@ import { LocationComponent } from './buy/location/location.component';
 import { BikeDetailsComponent } from './buy/bike-details/bike-details.component';
 import { BikeInfoComponent } from './buy/bike-info/bike-info.component';
 import { Slider1Component } from './buy/slider1/slider1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,13 @@ import { Slider1Component } from './buy/slider1/slider1.component';
     BikeInfoComponent,
     Slider1Component,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, NgxOtpInputModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    NgxOtpInputModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
